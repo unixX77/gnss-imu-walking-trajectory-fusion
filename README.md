@@ -21,3 +21,34 @@ This project uses the “An Inertial and Positioning Dataset for the Walking Act
 Link: https://datadryad.org/dataset/doi%3A10.5061/dryad.n2z34tn5q
 
 For this project, I selected Subject 14, Track 14_3 as the main baseline track because it contains GNSS, IMU, orientation, step, and continuous reference-distance data. The raw dataset is not included in this repository; please download it from the original source and place it inside the data/ directory before running the notebook.
+
+#Project Pipeline
+
+# 1. Dataset Inspection and Track Filtering
+The first stage inspects the metadata file to identify tracks that contain the required sensor streams. Tracks are filtered based on the availability of GNSS data, IMU/motion data, and minimul distance between reference distance and observed distance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
