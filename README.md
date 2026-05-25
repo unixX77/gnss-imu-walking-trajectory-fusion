@@ -28,12 +28,12 @@ For this project, I selected Subject 14, Track 14_3 as the main baseline track b
 The first stage inspects the metadata file to identify tracks that contain the required sensor streams. Tracks are filtered based on the availability of GNSS data, IMU/motion data, and minimul distance between reference distance and observed distance.
 
 | subject | TestID | testName   | distanceReference | testName |
-| ------------- | ------------- | -------------|---------------
-| 14            | 3            | 1011 | 14_3 |
-| 14            | 2             | 1001 | 14_2 |
-| 14            | 1              | 1005 | 14_1 |
-| 14            | 0              | 1000 | 14_0 |
-| 14            | 4              |1002| 14_4 |
+| ------------- | ------------- | ------------------|----------|
+| 14            | 3             | 1011              | 14_3     |
+| 14            | 2             | 1001              | 14_2     |
+| 14            | 1             | 1005              | 14_1     |
+| 14            | 0             | 1000              | 14_0     |
+| 14            | 4             |1002               | 14_4     |
 
 
 
