@@ -44,8 +44,13 @@ This stage helps reveal issues such as GNSS initialization noise, sudden positio
 
 ![Raw GNSS Trajectory](plots/raw_gnss_trajectory.png)
 
+4. Raw IMU and Orientation Exploration
 
+The IMU signals are inspected using acceleration, acceleration magnitude, gyroscope rotation rates, gyroscope magnitude, and orientation angles. This helps understand how the phone motion, hand movement, and device orientation affect the raw sensor readings.
 
+The goal is to show that IMU data contains useful high-frequency walking motion, but it is also affected by noise, phone orientation, and hand-held motion.
+
+![Raw GNSS Trajectory](plots/IMU_acc_mag_without_gravity_time.png)
 
 
 
