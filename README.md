@@ -67,13 +67,24 @@ The converted trajectory is used to compute GNSS step distance, cumulative dista
 ![Raw GNSS](plots/gnss_trajectory_local_coordinates.png)
 
 # 7. Reference Distance Alignment
+The continuous reference distance is interpolated onto the GNSS timestamps. This allows the GNSS cumulative distance and the reference distance to be compared at the same time points. This stage is important because GNSS and reference-distance timestamps do not exactly match.
 
+![Raw GNSS](plots/GNSS_distance_reference_distace.png)
 
-![Raw GNSS](plots/GNSS_distance_reference_distace..png)
+8. GNSS Outlier Detection
 
+Candidate GNSS outliers are detected using physically interpretable and quality-based criteria:
 
+large GNSS step distance,
+high computed speed,
+high GNSS-reported speed,
+high confidence interval,
+missing or unreliable GNSS motion indicators.
 
+Instead of deleting suspicious measurements, the pipeline assigns a gnss_outlier flag. This allows unreliable GNSS points to be skipped or down-weighted later during filtering.
 
+![Raw GNSS](plots/Ggnss_trajectory_outliers.png)
+![Raw](plots/imu_acc_outlers.png)
 
 
 
