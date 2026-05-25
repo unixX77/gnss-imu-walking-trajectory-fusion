@@ -99,7 +99,7 @@ z = [x_gnss, y_gnss]
 
 GNSS measurements marked as outliers are skipped during correction. This demonstrates how GNSS quality flags can be integrated into a filtering pipeline.
 
-![RAW](reference_raw_gnss_Kf_distance.png)
+![raw](plots/reference_raw_gnss_Kf_distance.png)
 
 
 
