@@ -27,6 +27,8 @@ For this project, I selected Subject 14, Track 14_3 as the main baseline track b
 # 1. Dataset Inspection and Track Filtering
 The first stage inspects the metadata file to identify tracks that contain the required sensor streams. Tracks are filtered based on the availability of GNSS data, IMU/motion data, and minimul distance between reference distance and observed distance.
 
+# 2. Track Selection
+From the filtered candidates, Subject 14, Track 14_3 was selected as the baseline track. This track contains GNSS, IMU, orientation, step, and continuous reference-distance data. It also has a small difference between reference distance and app-measured distance, making it a good starting point for building and validating the preprocessing pipeline.
 | Subject | TestID | Test Name | Reference Distance [m] |
 |---:|---:|---|---:|
 | 14 | 3 | 14_3 | 1011 |
@@ -34,6 +36,12 @@ The first stage inspects the metadata file to identify tracks that contain the r
 | 14 | 1 | 14_1 | 1005 |
 | 14 | 0 | 14_0 | 1000 |
 | 14 | 4 | 14_4 | 1002 |
+
+# 3. Raw GNSS Exploration
+The GNSS data is first visualized in its raw form using latitude and longitude. Speed, heading, and confidence interval are also inspected to understand signal quality and identify suspicious regions.
+
+This stage helps reveal issues such as GNSS initialization noise, sudden position jumps, unrealistic speed spikes, and changes in reported GNSS uncertainty.
+
 
 
 
