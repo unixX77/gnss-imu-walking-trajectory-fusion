@@ -101,8 +101,14 @@ GNSS measurements marked as outliers are skipped during correction. This demonst
 
 ![raw](plots/reference_raw_gnss_Kf_distance.png)
 
+# 10. Final Metrics
 
+| Method | Final Distance [m] | Reference Final Distance [m] | Final Signed Error [m] | Final Absolute Error [m] | Mean Absolute Error [m] | Max Absolute Error [m] | GNSS Updates Used | GNSS Updates Skipped |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Raw GNSS | 1121.113 | 1004.737 | 116.376 | 116.376 | 106.060 | 116.633 | 658 | 8 |
+| Kalman Filter | 1020.123 | 1004.737 | 15.386 | 15.386 | 3.230 | 15.975 | 658 | 8 |
 
+The Kalman Filter significantly reduces the final distance error compared with raw GNSS. Raw GNSS overestimates the walking distance due to early position jumps and accumulated GNSS noise, while the Kalman Filter follows valid GNSS updates and skips flagged outlier measurements during correction.
 
 
 
