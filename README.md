@@ -83,7 +83,7 @@ missing or unreliable GNSS motion indicators.
 
 Instead of deleting suspicious measurements, the pipeline assigns a gnss_outlier flag. This allows unreliable GNSS points to be skipped or down-weighted later during filtering.
 
-![Raw GNSS](plots/Ggnss_trajectory_outliers.png)
+![Raw GNSS](plots/gnss_trajectory_outliers.png)
 ![Raw](plots/imu_acc_outlers.png)
 
 
