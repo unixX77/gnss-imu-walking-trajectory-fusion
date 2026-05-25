@@ -42,7 +42,7 @@ The GNSS data is first visualized in its raw form using latitude and longitude. 
 
 This stage helps reveal issues such as GNSS initialization noise, sudden position jumps, unrealistic speed spikes, and changes in reported GNSS uncertainty.
 
-![Project Screenshot](plots/raw_gnss_trajectory.png)
+![Raw GNSS Trajectory](plots/raw_gnss_trajectory.png)
 
 
 
