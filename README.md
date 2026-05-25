@@ -44,7 +44,7 @@ This stage helps reveal issues such as GNSS initialization noise, sudden positio
 
 ![Raw GNSS Trajectory](plots/raw_gnss_trajectory.png)
 
-4. Raw IMU and Orientation Exploration
+# 4. Raw IMU and Orientation Exploration
 
 The IMU signals are inspected using acceleration, acceleration magnitude, gyroscope rotation rates, gyroscope magnitude, and orientation angles. This helps understand how the phone motion, hand movement, and device orientation affect the raw sensor readings.
 
@@ -52,8 +52,19 @@ The goal is to show that IMU data contains useful high-frequency walking motion,
 
 ![Raw GNSS Trajectory](plots/IMU_acc_mag_without_gravity_time.png)
 
+# 5. Time Alignment and Sensor Preparation
 
+All sensor streams are trimmed to the official walking interval using the test start and end timestamps. A normalized time axis is created so that all streams start from the same reference time. GNSS, IMU, orientation, step, and reference-distance data are then prepared for comparison.
 
+This stage ensures that all sensors are temporally consistent before performing trajectory comparison or filtering.
+
+# 6. GNSS Coordinate Conversion
+
+GNSS latitude and longitude are converted into local metric coordinates using the first GNSS point as the local origin. This produces east/north displacement values in meters, allowing proper trajectory visualization and distance computation.
+
+The converted trajectory is used to compute GNSS step distance, cumulative distance, and GNSS-derived speed.
+
+![Raw GNSS](plots/gnss_trajectory_local_coordinates.png)
 
 
 
