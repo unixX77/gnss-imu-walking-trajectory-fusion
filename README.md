@@ -1,1 +1,1 @@
-# gnss-imu-walking-trajectory-fusion
+# GNSS-IMU-WALKING-TRAJECTORY-FUSION
