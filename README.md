@@ -69,7 +69,7 @@ The converted trajectory is used to compute GNSS step distance, cumulative dista
 # 7. Reference Distance Alignment
 
 
-![Raw GNSS](plots/gnss_trajectory_local_coordinates.png)
+![Raw GNSS](plots/GNSS_distance_reference_distace..png)
 
 
 
