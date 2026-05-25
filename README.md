@@ -86,6 +86,21 @@ Instead of deleting suspicious measurements, the pipeline assigns a gnss_outlier
 ![Raw GNSS](plots/gnss_trajectory_outliers.png)
 ![Raw](plots/imu_acc_outlers.png)
 
+# 9. Kalman Filter Trajectory Estimation
+A first-stage Kalman Filter prototype is implemented using a constant-velocity motion model. The filter estimates the trajectory state:
+
+[x, y, vx, vy]
+
+where x and y are local metric positions and vx, vy are velocities.
+
+GNSS provides position updates through:
+
+z = [x_gnss, y_gnss]
+
+GNSS measurements marked as outliers are skipped during correction. This demonstrates how GNSS quality flags can be integrated into a filtering pipeline.
+
+![RAW](reference_raw_gnss_Kf_distance.png)
+
 
 
 
